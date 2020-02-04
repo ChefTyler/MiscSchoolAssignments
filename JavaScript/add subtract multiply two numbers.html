@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>math</title>
+</head>
+<body>
+<p id="add"></p>
+<p id="subtract"></p>
+<p id="multiply"></p>
+<p id="divide"></p>
+<script>
+
+    function show_prompt()
+    {
+    var num1=prompt("Please enter a whole number",' ');
+    var num2=prompt("Please enter a second whole number", ' ');
+
+var add1 = document.getElementById("add").innerHTML =((+num1) + (+num2)); 
+var multiply1 = document.getElementById("multiply").innerHTML =(num1 * num2); 
+var subtract1 = document.getElementById("subtract").innerHTML =(num1 - num2); 
+var divide1 = document.getElementById("divide").innerHTML =(num1 / num2); 
+
+document.getElementById("add").innerHTML = "adding the first integer and the second one results in " + add + " !"
+"adding the first integer to the second has a sum of " + add1 + "! ";
+document.getElementById("subtract").innerHTML =
+"subtracting the first integer from the second reults in " + subtract1 + "!";
+document.getElementById("multiply").innerHTML =
+'multiplying the first integer and the second one results in ' + multiply1 + "!";
+document.getElementyById("divide").innerHTML =
+"dividing num1 by num2 results in " + divide1 + "! "
+    }
+
+</script>
+<input type="button" onclick="show_prompt()" value="Please click me to enter your integers"/>
+<p>This is an example of basic mathmatical operations</p>
+</body>
+</html>

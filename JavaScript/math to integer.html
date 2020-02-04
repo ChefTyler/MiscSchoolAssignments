@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>17-3</title>
+</head>
+
+<body>
+<script>
+function show_prompt() {
+var int1=prompt("Please enter a whole number"," ");
+var x, y, z;
+x = 2;
+y = 3;
+z = 5;
+var ans1 = parseFloat(int1) + parseFloat(x);
+var ans2 = parseFloat(int1) * parseFloat(y);
+var ans3 = parseFloat(int1) - parseFloat(z);
+
+document.getElementById("ans1").innerHTML =
+("Adding 2 to the interger has a sum of " + ans1 +  "! "); 
+
+document.getElementById("ans2").innerHTML = 
+("Multiplying 3 by the interger has a prod of " + ans2 +  "! "); 
+
+document.getElementById("ans3").innerHTML = 
+("Subtracting 5 from the interger has a difference of " + ans3 +  "! "); 
+}
+</script>
+<p>This is an example of a simple program...</p>
+
+<input type="button" onclick="show_prompt()" value="Show prompt box" />
+<p id="ans1"></p>
+<p id="ans2"></p>
+<p id="ans3"></p>
+</body>
+</html>

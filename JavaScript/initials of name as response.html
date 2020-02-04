@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What's your name?</title>
+</head>
+
+<body>
+
+<script>
+function show_prompt()
+{
+var fname=prompt("Please enter your first name"," ");
+var mname=prompt("Please enter your middle name"," ");
+var lname=prompt("Please enter your last name", " ");
+
+var finitial=fname.substr(0, 1);
+var minitial=mname.substr(0, 1);
+var linitial=lname.substr(0, 1);
+document.getElementById("demo").innerHTML = 
+("Hello, " + finitial + minitial + linitial + " ! How are you today?"); 
+} 
+</script>
+
+<p>This is an example of a very simple program...</p>
+
+<input type="button" onclick="show_prompt()" value="Show prompt box" />
+
+<p id="demo"></p>
+
+</body>
+</html>

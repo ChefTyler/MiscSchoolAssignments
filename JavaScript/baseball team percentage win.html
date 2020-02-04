@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What's your name?</title>
+</head>
+
+<body>
+
+<script>
+function show_prompt()
+{
+var tname = prompt ("What is the name of your baseball team?"," ");
+var gwon = prompt ("How many games have you won?"," ");
+gwon = parseInt(gwon);
+var glost = prompt ("How many games have you lost?"," ");
+glost = parseInt(glost);
+var total = gwon / (gwon + glost) 
+var winper = total * 100;
+winper = parseInt(winper)
+document.getElementById("demo").innerHTML =
+("The " + tname + " has won " + winper + "% of their games this season!"); 
+}  
+</script>
+
+<p>Baseball team season record:</p>
+
+<input type="button" onclick="show_prompt()" value="Show prompt box" />
+
+<p id="demo"></p>
+
+</body>
+</html>

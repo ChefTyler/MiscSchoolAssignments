@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>temp response</title>
+</head>
+
+<body>
+
+        <p>Click the button to enter the termpreture</p>
+
+        <button onclick="myFunction()">Click Me.</button>
+        
+        <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+    var  temp = prompt("Please enter the tempreture outside", "");
+
+if (temp >= 86) {
+  document.getElementById("demo").innerHTML =
+  "It's " + temp + " degrees outside? That's hot!";
+    }
+    if (temp <= 85) {
+        document.getElementById("demo").innerHTML =
+        "It's " + temp + " that is an enjoyable tempreture.";
+    }
+    if (temp <= 55) {
+        document.getElementById("demo").innerHTML =
+        "It's " + temp + " That is cold.";
+    }
+}
+    </script>
+</body>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>21-4</title>
+</head>
+<body>
+<style>
+.cust { text-decoration: underline; }
+.hol { text-decoration: underline; }
+.cop { text-decoration: underline; }
+</style>
+<p id = "c"></p>
+<p id = "b"></p>
+</body>
+<script>
+var cust = (prompt("Please enter your Name"));
+var hol = parseFloat(prompt("Please enter the hours you worked"));
+var cop = parseFloat(prompt("Please enter the cost of parts without $"));
+var custp = cust;
+var lc = 35 * hol;
+var pc = cop * 5;
+var tc = pc + lc;
+document.getElementById("c").innerHTML = 
+"Customer? " + " <span style='text-decoration: underline;'>" + cust + "</span> " + " Hours of labor? " + " <span style='text-decoration: underline;'>" + hol + "</span>" + " Cost of parts? " + " <span style='text-decoration: underline;'>" + cop + "</span>";
+document.getElementById("b").innerHTML =
+"&nbsp;  &nbsp;  " + custp + "<br>" + " Labor cost $" + lc + "<br>" + " Parts cost $" + pc + "<br>" + " Total cost $" + tc;
+</script>
+</html>

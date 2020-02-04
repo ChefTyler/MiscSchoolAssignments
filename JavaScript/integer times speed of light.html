@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>21-3</title>
+</head>
+
+<body>
+
+        <p>This will multiply your input by the speed of light in meters per second</p>
+
+        <button onclick="myFunction()">Click Me.</button>
+        
+        <p id="demo"></p>
+
+    <script>
+        function myFunction() 
+        {
+    var  int1 = prompt("Please enter your number", "");
+    var mult = int1 * 299792458;
+{
+        document.getElementById("demo").innerHTML =
+        int1 + " X 299,792,458mps = " + mult;
+    }
+
+}
+    </script>
+</body>

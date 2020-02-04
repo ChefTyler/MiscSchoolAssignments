@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>21-4</title>
+</head>
+<body>
+
+
+<p id = "b"></p>
+</body>
+<script>
+var b 
+var ol = parseFloat(prompt("Please enter your original loan:"));
+var mp = parseFloat (prompt("Please enter your Monthly Payment:"))
+var i = parseFloat(prompt("Please enter your interest rate %:"))
+var k = parseFloat(prompt("Please enter the number of payments made:"))
+var n = parseFloat(prompt("Please enter the total number of payments:"))
+i = (i / 100)/ 12
+z = Math.pow(1 + i, n - k)
+b = (ol * z) - mp * ((z - 1)/i)
+document.getElementById("b").innerHTML =
+"To pay off your loan you must pay $" + b;
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>29-1</title>
+</head>
+
+<body>
+
+        <p>Click the button to enter your age.</p>
+
+        <button onclick="myFunction()">Click Me.</button>
+        
+        <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+    var  age = prompt("Please enter your age", "");
+
+if (age >= 20) {
+  document.getElementById("demo").innerHTML =
+  "You're " + age + " You're an adult.";
+    }
+    if (age <= 19) {
+        document.getElementById("demo").innerHTML =
+        "You're " + age + " You are a teenager.";
+    }
+    if (age <= 12) {
+        document.getElementById("demo").innerHTML =
+        "You're " + age + " You are a child.";
+    }
+}
+    </script>
+</body>

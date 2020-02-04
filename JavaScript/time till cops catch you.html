@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What's your name?</title>
+</head>
+
+<body>
+    <p id = "timeA"></p>
+    <p id = "timeB"></p>
+    <p id = "distanceA"></p>
+    <p id = "distanceB"></p>
+
+    <script>
+    //brings in values
+    var speed1 = parseFloat(prompt("Please enter your speed;"));
+    var speedP = parseFloat(prompt("Please enter police speed"));
+    var distance = parseFloat (prompt("Please enter the distance in miles between cars:"));
+    //time in minutes
+    var timeA = (distance/(speedP + speed1)) * 60
+    var timeB = (distance/(speedP - speed1)) * 60
+    //distance in miles
+    var distanceA = (speedP * timeA) / 60
+    var distanceB = (speedP * timeB) / 60
+
+    //print out
+    document.getElementById("timeA").innerHTML =
+    "Time it will take police to catch you from the front " + timeA.toFixed(2) + " minutes";
+    document.getElementById("timeB").innerHTML =
+    "Time it will take police to catch you from behind " + timeB.toFixed(2) + " minutes";
+    document.getElementById("distanceA").innerHTML =
+    "Miles it will take police to catch you from the front " + distanceA.toFixed(2) + " Miles";
+    document.getElementById("distanceB").innerHTML =
+    "Miles it will take police to catch you from behind " + distanceB.toFixed(2) + " Miles";
+    </script>
+</body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>profit loss</title>
+</head>
+
+<body>
+
+        <p>Click to enter your profit or loss</p>
+
+        <button onclick="myFunction()">Click Me.</button>
+        
+        <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+    var  int1 = prompt("Please enter your profit or loss", "");
+            int1 = parseInt(int1);
+
+     if (int1 >= 1) {
+        document.getElementById("demo").innerHTML =
+        "Your profit is $"+ int1 + " ";
+    }
+    if (int1 == 0) {
+        document.getElementById("demo").innerHTML =
+        "You're profit loss is $" + int1 + " you broke even.";
+    }
+    if (int1 <= -1) {
+        document.getElementById("demo").innerHTML =
+        "Your loss is $" + int1 + " You are vaugley in the red.";
+    }
+    if (int1 <= -5000) {
+  document.getElementById("demo").innerHTML =
+  "You're loss is $" + int1 + " you're way in the red";
+    }
+}
+    </script>
+</body>

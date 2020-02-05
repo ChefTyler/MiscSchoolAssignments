@@ -1,0 +1,1 @@
+The oldest files in this dir are one single project, this is just hosting assignments and I have no intention of sorting everything, this exists as a show of knowledge and progression when combined with my other school projects hosted on my Github account.
